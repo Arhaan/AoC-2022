@@ -24,10 +24,10 @@ fn main(){
             c = l.get(3).unwrap().as_str().parse().expect("Invalid");
             d = l.get(4).unwrap().as_str().parse().expect("Invalid");
         }
-        if a<=c && d <= b{
-            ans += 1;
+        if c > b || a > d{
+            ans += 0;
         } 
-        else if a >= c && d >= b{
+        else{
             ans += 1;
         }
     }
